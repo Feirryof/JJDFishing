@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - JJD Fishing</title>
+    <link rel="icon" href="jjd.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        window.onload = function(){
+        (function(d, script) {
+        script = d.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'https://w.app/widget-v1/fEGKWu.js';
+        d.getElementsByTagName('head')[0].appendChild(script);
+        }(document));
+        };
+        </script>
+</head>
+<body class="container">
+    <header>
+        <div class="logo">
+            <img src="jjd.png" alt="Logo JJD Fishing" class="logo-img"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="produto">
+                <img src="vara-pesca.png" alt="Vara de Pesca">
+                <h3>Vara de Pesca</h3>
+                <p>R$ 199,90</p>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="carretel.png" alt="Carretel">
+                <h3>Carretel</h3>
+                <p>R$ 129,90</p>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="carretel.png" alt="Carretel">
+                <h3>Carretel</h3>
+                <p>R$ 129,90</p>
+                <button class="btn-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section class="carrinho">
+            <h2>Seu Carrinho</h2>
+            <div class="itens-carrinho"></div>
+            <div class="total">
+                <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
+                <button id="btn-comprar">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <h2>Informações do Cliente</h2>
+            <form id="form-dados-cliente">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" required>
+                
+                <label for="endereco">Endereço:</label>
+                <textarea id="endereco" required></textarea>
+                
+                <button class="order">
+                    <span class="default">Finalizar Pedido</span>
+                    <span class="success">Pedido Realizada <svg viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                    </svg></span>
+                    <div class="box"></div>
+                    <div class="truck">
+                        <div class="back"></div>
+                        <div class="fronts">
+                            <div class="window"></div>
+                        </div>
+                        <div class="light top"></div>
+                        <div class="light bottom"></div>
+                    </div>
+                    <div class="lines"></div>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+    <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; 2024 JJD Fishing - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
